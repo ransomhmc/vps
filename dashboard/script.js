@@ -290,5 +290,5 @@ async function load() {
 
 document.addEventListener('DOMContentLoaded', () => {
   load();
-  setInterval(load, 300000);
+  setInterval(load, 300000); // 5 min
 });
