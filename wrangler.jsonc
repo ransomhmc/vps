@@ -1,0 +1,13 @@
+{
+  "name": "vps-api",
+  "main": "src/index.js",
+  "compatibility_date": "2026-06-08",
+  "compatibility_flags": ["nodejs_compat"],
+  "d1_databases": [
+    {
+      "binding": "VPS_DB",
+      "database_name": "vps-records",
+      "database_id": "383eb034-56c1-4bd8-bdb0-83fdacc3716e"
+    }
+  ]
+}
