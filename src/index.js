@@ -172,9 +172,11 @@ async function handleCleanup(request, env) {
     return jsonResponse({ error: 'collection and cutoff required' }, 400);
   }
 
+  const normalizedCutoff = normalizeD1Time(cutoff);
+
   const result = await env.VPS_DB.prepare(
     'DELETE FROM records WHERE collection = ? AND created_at < ?'
-  ).bind(collection, cutoff).run();
+  ).bind(collection, normalizedCutoff).run();
 
   return jsonResponse({ deleted: result.meta.changes });
 }
