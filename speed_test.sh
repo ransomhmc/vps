@@ -3,7 +3,7 @@
 # 用法：SPEED_CMD=./speed_test.sh python3 record_speed.py
 
 HOSTS="ipcam-74 ipcam-75 ipcam-76 ipcam-77 ipcam-78 ipcam-79 ipcam-80 ipcam-81"
-TEST_URL="https://speed.cloudflare.com/__down?bytes=10485760"
+TEST_URL="https://speed.cloudflare.com/__down?bytes=52428800"
 SSH_OPTS="-p 2222 -o ConnectTimeout=15 -o StrictHostKeyChecking=no"
 
 i=0
